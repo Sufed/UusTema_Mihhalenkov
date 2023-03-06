@@ -12,3 +12,10 @@ while True:
         line=input("Lisa lause: ")
         laused.append(line)
         Kirjuta_failisse("Laused.txt",laused)
+    elif v==3:
+        text=""
+        for line in laused:
+            text=text+" "+line
+        Heli(text,'et') #text : kõik elemendis järjendis
+        ind=int(input("Number: ")) #Üks element indeksiga ind
+        Heli(laused[ind],'et')
